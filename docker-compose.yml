@@ -1,0 +1,7 @@
+services:
+  vault-api:
+    build: .
+    container_name: devsnippet-vault-app
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
